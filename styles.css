@@ -14,10 +14,7 @@ header {
   align-items: center;
   width: 375px;
   height: 48px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 44px;
-  margin-bottom: 0px;
+  margin: 44px 0 0 0;
 }
 .menu {
 display: flex;
@@ -66,7 +63,7 @@ a {
   top: 92px;
 
 }
-.first-headline {
+.first-headline h2 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -78,7 +75,7 @@ a {
   
   
 }
-.heading-description {
+.heading-description p {
 width: 327px;
 height: 146px;
 font-family: 'Poppins';
