@@ -15,7 +15,7 @@ header {
   margin: 44px 0 0 0;
 }
 
-.menu {
+nav {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -61,7 +61,7 @@ a {
   top: 92px;
 }
 
-.first-headline h2 {
+.first-headline h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
