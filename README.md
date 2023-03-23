@@ -2,7 +2,7 @@
 
 <div align="center">  
 
-  <h3><b>Module 1: Hello Microverse Project</b></h3>
+  <h3><b>Abel Morara Portfolio </b></h3>
 
 </div>
 
@@ -21,10 +21,10 @@
 
 
 
-# 📖 [Hello-Microverse] <a name="about-project"></a>
+# 📖 [Abel-Morara-Portfolio] <a name="about-project"></a>
 
 
-**[Hello-Microverse]** is my first project at Microverse at Microverse, on Module 1 Week One implemeted using HTML and CSS.
+**[Abel Morara Portfolio]** is a responsive web portfolio application where a developer can keep record of their previous projects, accoplishments, skills, contacts and CV to make it easier for them to display and present their developer talents.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -32,16 +32,20 @@
 
 ### Key Features <a name="key-features"></a>
 
+- **[Mobile Responsive]**
 
-- **[Simple Homepage]**
+This is the mobile responsive version for now as it is build using the mobile first development approach.
 
+- **[Header Section]**
+
+This is the banner section with beautifully customized images and brief description of who the developer is.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [https://github.com/ProgramKingAbel/Hello-Microverse/pull/1](https://google.com)
+- [https://github.com/ProgramKingAbel/Abel-Morara-Portfolio/pull/1](https://google.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,8 +150,9 @@ Localhost on your computer through a local Server:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Make the application mobile responsive]**
-- [ ] **[Add media both images and videos]**
+- [ ] **[Add About Section]**
+- [ ] **[Add Portfolio area]**
+- [ ] **[Add Contacts Page]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
