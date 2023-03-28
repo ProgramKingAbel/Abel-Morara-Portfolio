@@ -24,7 +24,7 @@
 # 📖 [Abel-Morara-Portfolio] <a name="about-project"></a>
 
 
-**[Abel Morara Portfolio]** is a responsive web portfolio application where a developer can keep record of their previous projects, accoplishments, skills, contacts and CV to make it easier for them to display and present their developer talents.
+**Abel Morara Portfolio** is a responsive web portfolio application where a developer can keep record of their previous projects, accoplishments, skills, contacts and CV to make it easier for them to display and present their developer talents.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -39,6 +39,14 @@ This is the mobile responsive version for now as it is build using the mobile fi
 - **[Header Section]**
 
 This is the banner section with beautifully customized images and brief description of who the developer is.
+
+- **[Works Section]**
+
+This is the works area with beautifully customized images and brief description of sample projects the developer has worked on.
+
+- **[About Section]**
+
+This is the details of how to get in touch with the developer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,9 +158,9 @@ Localhost on your computer through a local Server:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Add About Section]**
-- [ ] **[Add Portfolio area]**
-- [ ] **[Add Contacts Page]**
+- [ ] **[Add Live project samples]**
+- [ ] **[Add dynamic widgets]**
+- [ ] **[Develop Dekstop Version]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

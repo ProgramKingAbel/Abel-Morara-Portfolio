@@ -1,105 +1,308 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
+  border: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #f7f7f9;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
 }
 
 header {
+  background: #fff;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 375px;
-  height: 48px;
-  margin: 44px 0 0 0;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  margin-right: 24px;
-  top: calc(50% - 40px / 2);
-  border-radius: 8px;
-}
-
-.logo {
-  width: 76px;
-  height: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
+header a {
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
   text-align: center;
-  margin-left: 24px;
+  font-weight: 700;
   color: #6070ff;
 }
 
-a {
-  text-decoration: none;
+header i {
+  color: #6070ff;
+  font-size: 1.5rem;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 114px 24px;
-  gap: 12px;
+.header-background {
   background-image: url(./images/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
-  font-family: 'Poppins', sans-serif;
-  width: 375px;
-  height: 604px;
-  left: calc(50% - 375px / 2);
-  top: 92px;
+  background-size: cover;
+  height: 40rem;
+  position: absolute;
+  background-color: #fff;
+  border-bottom-left-radius: 4rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.first-headline p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+.about {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 7rem;
+  gap: 0.75rem;
+}
+
+.about h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #172b4d;
+  line-height: 3.25rem;
+}
+
+.about p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #172b4d;
+  line-height: 1.5rem;
+}
+
+.about h3 {
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7f8cff;
+  margin-bottom: 1rem;
+}
+
+.about ul {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  align-self: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about i {
+  font-size: 1.7rem;
+  color: #505f79;
+}
+
+/* MY WORKS */
+.works {
+  background: #f7f7f9;
+  width: 100%;
+}
+
+.works .contents {
+  background: #f7f7f9;
+}
+
+.works .projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.works .details {
+  background: #fff;
+  padding: 1rem;
+  border: 0.5px solid rgb(231, 231, 231);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  height: auto;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.works .details:nth-child(1) {
+  margin-top: 45rem;
+}
+
+.works .details img {
+  width: 100%;
+  height: auto;
+}
+
+.details .card-info {
+  margin-bottom: 1.2rem;
+}
+
+.myself h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #172b4d;
+  line-height: 3.25rem;
+}
+
+.details .card-info h2 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-size: 2rem;
   color: #172b4d;
 }
 
-.heading-description p {
-  width: 327px;
-  height: 146px;
-  font-family: 'Poppins', sans-serif;
+.details .card-info a {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #396df2;
+  transition: all 300ms ease;
+}
+
+.details .card-info a:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.details .card-info a:active {
+  background-color: #2230d2;
+}
+
+.details .card-info .title-and-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.2rem 0 0.5rem;
+}
+
+.details .card-info .title-and-date .title {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #344563;
   font-style: normal;
+}
+
+.details .card-info .title-and-date span {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #c1c7d0;
+}
+
+.details .card-info .title-and-date .muted {
+  font-family: "Poppins", serif;
+  color: #7a869a;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.details .card-info .description {
+  font-family: "Poppins", serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.9rem;
   line-height: 24px;
   color: #344563;
+  margin-bottom: 0.8rem;
 }
 
-.social-media-text {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
+/* MY SKILLS */
+.skills li {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
 }
 
-.social-media-icons img {
-  width: 20px;
-  height: 20px;
-  order: 3;
-  margin: 12px 20px 1px 0;
-}
-
-ul {
-  list-style-type: none;
+.details .card-info .stack {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.details .card-info .stack li {
+  font-family: "Poppins", serif;
+  padding: 0.25rem 0.75rem;
+  background: #ebebff;
+  border-radius: 0.3rem;
+  color: #6070ff;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.btn {
+  border: 1px solid #396df2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn-self {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #396df2;
+  margin-bottom: 2rem;
+  align-self: start;
+}
+
+.about-bg {
+  background: #fff;
+  border-top-right-radius: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
+}
+
+.myself {
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+
+.myself .list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+ul .skills .categories .dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+
+ul .skills .categories .dropdown h3 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+ul .skills .categories .dropdown i {
+  margin-bottom: 1rem;
+}
+
+ul .skills .categories .dropdown-items ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+  background: #f7f7f9;
+  padding: 1rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+ul .skills .categories .dropdown-items ul li {
+  font-family: "Poppins", serif;
+  color: #253858;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+hr {
+  border-bottom: 2px solid #e9e9e9;
+  margin-bottom: 1.2rem;
 }
