@@ -46,6 +46,10 @@ This is the works area with beautifully customized images and brief description 
 
 - **[About Section]**
 
+This is the details of who the developer is and the skillset he is compentent in.
+
+- **[Contact Section]**
+
 This is the details of how to get in touch with the developer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
