@@ -37,11 +37,11 @@ header a {
 header i {
   color: #6070ff;
   font-size: 1.5rem;
-  }
+}
 
 header a.logo {
   animation: rotateLogo 5s;
- }
+}
 
 @keyframes rotateLogo {
   0% {
@@ -152,10 +152,9 @@ nav .header-links {
   transition: transform 1s;
 }
 
-.works .details img:hover{
+.works .details img:hover {
   transform: scale(1.03);
 }
-
 
 .details .card-info {
   margin-bottom: 1.2rem;
