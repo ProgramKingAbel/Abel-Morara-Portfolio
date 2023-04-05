@@ -39,6 +39,20 @@ header i {
   font-size: 1.5rem;
 }
 
+header a.logo {
+  animation: rotateLogo 5s;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 nav .header-links {
   display: none;
 }
@@ -135,6 +149,11 @@ nav .header-links {
 .works .details img {
   width: 100%;
   height: auto;
+  transition: transform 1s;
+}
+
+.works .details img:hover {
+  transform: scale(1.03);
 }
 
 .details .card-info {
