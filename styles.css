@@ -37,6 +37,20 @@ header a {
 header i {
   color: #6070ff;
   font-size: 1.5rem;
+  }
+
+header a.logo {
+  
+  animation: rotateLogo 5s;
+}
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 nav .header-links {
