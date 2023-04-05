@@ -26,8 +26,6 @@ header {
   padding: 2rem;
 }
 
-
-
 header a {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -40,9 +38,11 @@ header i {
   color: #6070ff;
   font-size: 1.5rem;
 }
+
 nav .header-links {
   display: none;
 }
+
 .header-background {
   background-image: url(./images/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
@@ -273,18 +273,17 @@ nav .header-links {
   margin-top: 2rem;
 }
 
-.myself .myself-wrapper .handles li{
+.myself .myself-wrapper .handles li {
   margin-bottom: 1rem;
 }
+
 .myself .myself-wrapper .handles {
- width: 50%;
+  width: 50%;
 }
+
 .myself .myself-wrapper h3 {
   margin-bottom: 1rem;
- 
 }
-
-
 
 ul .skills .categories .dropdown {
   display: flex;
@@ -428,104 +427,108 @@ button[type="submit"]:hover {
 button[type="submit"]:active {
   background: #2230d2;
 }
+
 /* desktop version */
 @media only screen and (min-width: 768px) {
-
   header i {
     display: none;
   }
+
   nav .header-links {
     display: flex;
     gap: 2.5rem;
     margin: 0 auto;
   }
+
   nav .header-links a {
-    font-family: 'Poppins';
+    font-family: "Poppins", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
     color: #344563;
-
   }
+
   .header-background {
-  background-image: url(./images/Header-bg-desktop.svg);
-  
-   }
+    background-image: url(./images/Header-bg-desktop.svg);
+  }
 
-    .about {
-      width: 70%;
-      margin-top: 7rem;
-      padding: 5rem 0 0;
-    }
+  .about {
+    width: 70%;
+    margin-top: 7rem;
+    padding: 5rem 0 0;
+  }
 
-    .works .projects .details {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-   
-    .works .projects .details img.pos {
-      order: 2;
-    }
-    .works .projects .details .card-info {
-      order: 1;
+  .works .projects .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 
-    }
-    .switched-cards-info {
-      padding-top: 1rem;
-      padding-left: 1rem;
-    }
-   .myself {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      width: 85%;
-   
+  .works .projects .details img.pos {
+    order: 2;
+  }
 
- }
- .myself .myself-wrapper .handles {
-  gap: 1rem;
-  width: 40%;
- }
- .myself .myself-wrapper h3 {
-  margin-top: 1rem;
- }
+  .works .projects .details .card-info {
+    order: 1;
+  }
 
- ul .skills .categories .dropdown {
-  width: 100%;
-}
- ul .skills .categories .dropdown ul {
-  flex-direction: column;
-  gap: 0.6rem;
-  padding: 0.8rem 1rem;
-  margin: 0.5rem 0 2rem;
-}
-ul .skills .categories .dropdown-items ul {
-  flex-wrap: wrap;
-  
-}
-.dropdown-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-}
+  .switched-cards-info {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
 
-ul .skills .categories .dropdown h3 {
-  margin-top: 0;
-}
-form {
- 
-  max-width: 45%;
-}
-.contact-me {
-  margin-top: -0.5rem;
-  background-image: url(./images/ctback.png);
-  
-}
+  .myself {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 85%;
+  }
 
-button[type="submit"] {
-  align-self: center;
-}
+  .myself .myself-wrapper .handles {
+    gap: 1rem;
+    width: 40%;
+  }
 
+  .myself .myself-wrapper h3 {
+    margin-top: 1rem;
+  }
+
+  ul .skills .categories .dropdown {
+    width: 100%;
+  }
+
+  ul .skills .categories .dropdown ul {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0 2rem;
+  }
+
+  ul .skills .categories .dropdown-items ul {
+    flex-wrap: wrap;
+  }
+
+  .dropdown-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  ul .skills .categories .dropdown h3 {
+    margin-top: 0;
+  }
+
+  form {
+    max-width: 45%;
+  }
+
+  .contact-me {
+    margin-top: -0.5rem;
+    background-image: url(./images/ctback.png);
+  }
+
+  button[type="submit"] {
+    align-self: center;
+  }
 }
