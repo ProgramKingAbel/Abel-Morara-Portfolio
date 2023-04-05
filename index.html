@@ -22,6 +22,12 @@
       <a href="#">Abel</a>
       <nav>
         <i class="uil uil-bars"></i>
+        <div class="header-links">
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        </div>
+        
       </nav>
     </header>
     <!-- MAIN SECTION -->
@@ -87,8 +93,8 @@
             </div>
           </div>
           <div class="details">
-            <img src="./images/grd2.svg" alt="" />
-            <div class="card-info">
+            <img class="pos" src="./images/grd2.svg" alt="" />
+            <div class="card-info switched-cards-info">
               <h2>Multi-Post Stories</h2>
               <div class="title-and-date">
                 <p class="title">CANOPY</p>
@@ -133,8 +139,8 @@
             </div>
           </div>
           <div class="details">
-            <img src="./images/grd4.svg" alt="" />
-            <div class="card-info">
+            <img class="pos" src="./images/grd4.svg" alt="" />
+            <div class="card-info switched-cards-info">
               <h2>Multi-Post Stories</h2>
               <div class="title-and-date">
                 <p class="title">CANOPY</p>
@@ -161,6 +167,7 @@
     <!-- ABOUT ME -->
     <section class="about-bg">
       <div class="myself about container">
+        <div class="myself-wrapper">
         <h2>About Myself</h2>
         <p>
           I'm a software developer! I can help you build a product , feature or
@@ -169,7 +176,7 @@
           me.
         </p>
         <h3>LET'S CONNECT</h3>
-        <ul>
+        <ul class="handles">
           <li>
             <a href="#"><i class="uil uil-twitter"></i></a>
           </li> 
@@ -187,8 +194,9 @@
           </li>
         </ul>
         <a class="btn btn-self" href="#">Get my resume</a>
+      </div>
         <!-- MY SKILLS -->
-        <ul class="list">
+         <ul class="list">
           <div class="skills">
             <li>
               <div class="categories">
@@ -196,6 +204,7 @@
                   <h3>Languages</h3>
                   <i class="uil uil-angle-down"></i>
                 </div>
+                <div class="dropdown-container">
                 <div class="dropdown-items">
                   <ul>
                     <img src="./images/Ellipse 1.svg" alt="" />
@@ -214,6 +223,7 @@
                     <li>CSS</li>
                   </ul>
                 </div>
+              </div>
               </div>
             </li>
             <li>
@@ -248,13 +258,15 @@
           <input type="text"
             name="name"
             id="name"
-            placeholder="John Doe"
+            placeholder="John Doe" 
             required
             maxlength="30"
+            
+
             />
           <input type="email"
-            name="email"
-            id="email"
+            name="email" 
+            id="email" 
             placeholder="johndoe@gmail.com"
             required
              />

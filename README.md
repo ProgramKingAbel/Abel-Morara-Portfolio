@@ -28,6 +28,22 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.microverse.org/">HTML5</a></li>
+    <li><a href="https://www.microverse.org/">CSS3</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">VS CODE Live Server Extension</a></li>
+  </ul>
+</details>
 
 
 ### Key Features <a name="key-features"></a>
