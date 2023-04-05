@@ -40,9 +40,9 @@ header i {
   }
 
 header a.logo {
-  
   animation: rotateLogo 5s;
-}
+ }
+
 @keyframes rotateLogo {
   0% {
     transform: rotate(0);
@@ -149,7 +149,13 @@ nav .header-links {
 .works .details img {
   width: 100%;
   height: auto;
+  transition: transform 1s;
 }
+
+.works .details img:hover{
+  transform: scale(1.03);
+}
+
 
 .details .card-info {
   margin-bottom: 1.2rem;
