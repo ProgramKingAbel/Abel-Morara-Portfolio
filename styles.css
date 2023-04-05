@@ -479,7 +479,7 @@ button[type="submit"]:active {
 
   .myself {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     gap: 2rem;
     width: 85%;
   }
