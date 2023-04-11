@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #f7f7f9;
 }
@@ -31,7 +35,7 @@ header a {
   font-size: 18px;
   text-align: center;
   font-weight: 700;
-  color: #6070ff;
+  color: #1c33ff;
 }
 
 header i {
@@ -93,11 +97,11 @@ nav .header-links {
   line-height: 1.5rem;
 }
 
-.about h3 {
+.about .h-class {
   font-family: "Poppins", serif;
   font-size: 1rem;
   font-weight: 500;
-  color: #7f8cff;
+  color: #1e34fe;
   margin-bottom: 1rem;
 }
 
@@ -217,7 +221,7 @@ nav .header-links {
 
 .details .card-info .title-and-date .muted {
   font-family: "Poppins", serif;
-  color: #7a869a;
+  color: #515966;
   font-weight: 500;
   font-size: 0.8rem;
 }
@@ -251,7 +255,7 @@ nav .header-links {
   padding: 0.25rem 0.75rem;
   background: #ebebff;
   border-radius: 0.3rem;
-  color: #6070ff;
+  color: #0e25f1;
   font-weight: 400;
   font-size: 0.75rem;
 }
@@ -286,9 +290,6 @@ nav .header-links {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-}
-
-.myself .list .skills {
   margin-top: 2rem;
 }
 
@@ -304,7 +305,7 @@ nav .header-links {
   margin-bottom: 1rem;
 }
 
-ul .skills .categories .dropdown {
+ul .categories .dropdown {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -312,18 +313,14 @@ ul .skills .categories .dropdown {
   width: 80%;
 }
 
-ul .skills .categories .dropdown h3 {
+ul .categories .dropdown h3 {
   font-family: "Poppins", serif;
   font-weight: 500;
   font-size: 1.25rem;
   color: #000;
 }
 
-ul .skills .categories .dropdown i {
-  margin-bottom: 1rem;
-}
-
-ul .skills .categories .dropdown-items ul {
+ul .categories .dropdown-items ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -334,7 +331,7 @@ ul .skills .categories .dropdown-items ul {
   border-radius: 0.4rem;
 }
 
-ul .skills .categories .dropdown-items ul li {
+ul .categories .dropdown-items ul li {
   font-family: "Poppins", serif;
   color: #253858;
   font-size: 1rem;
@@ -398,7 +395,9 @@ form {
   width: 100%;
   max-width: 40rem;
 }
-
+form label {
+  display: none;
+}
 input[type="text"],
 input[type="email"],
 textarea {
@@ -430,7 +429,7 @@ button[type="submit"] {
   background-color: white;
   font-weight: 400;
   font-size: 0.75rem;
-  color: #6070ff;
+  color: #1c33ff;
   margin-bottom: 2rem;
   align-self: start;
   letter-spacing: 0.03em;
@@ -512,18 +511,18 @@ button[type="submit"]:active {
     margin-top: 1rem;
   }
 
-  ul .skills .categories .dropdown {
+  ul .categories .dropdown {
     width: 100%;
   }
 
-  ul .skills .categories .dropdown ul {
+  ul .categories .dropdown ul {
     flex-direction: column;
     gap: 0.6rem;
     padding: 0.8rem 1rem;
     margin: 0.5rem 0 2rem;
   }
 
-  ul .skills .categories .dropdown-items ul {
+  ul .categories .dropdown-items ul {
     flex-wrap: wrap;
   }
 
@@ -534,7 +533,7 @@ button[type="submit"]:active {
     gap: 1rem;
   }
 
-  ul .skills .categories .dropdown h3 {
+  ul .categories .dropdown h3 {
     margin-top: 0;
   }
 
