@@ -69,7 +69,7 @@ This is the details of how to get in touch with the developer.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [https://github.com/ProgramKingAbel/Abel-Morara-Portfolio/pull/1](https://google.com)
+- [Go to Live site](https://programkingabel.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,6 +153,14 @@ Localhost on your computer through a local Server:
 
 ```sh
  https://www.apachefriends.org/download.html
+```
+
+Or:
+
+Github Pages:
+
+```sh
+ https://pages.github.com/
 ```
 
 
