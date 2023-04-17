@@ -331,7 +331,7 @@ ul .categories .dropdown-items ul {
   border-radius: 0.4rem;
 }
 
-ul .categories .dropdown-items ul li {
+ul.list .categories .dropdown-items ul li {
   font-family: "Poppins", serif;
   color: #253858;
   font-size: 1rem;
@@ -395,9 +395,11 @@ form {
   width: 100%;
   max-width: 40rem;
 }
+
 form label {
   display: none;
 }
+
 input[type="text"],
 input[type="email"],
 textarea {
