@@ -15,6 +15,7 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pop-up.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -66,104 +67,18 @@
       </section>
     </main>
     <!-- MY WORKS -->
-    <section class="works">
-      <div class="contents container">
-        <div class="projects">
-          <div class="details">
-            <img src="./images/Tonic.svg" alt="" />
-            <div class="card-info">
-              <h2>TONIC</h2>
-              <div class="title-and-date">
-                <p class="title">CANOPY</p>
-                <span></span>
-                <p class="muted">Back End Dev</p>
-                <span></span>
-                <p class="muted">2015</p>
-              </div>
-              <p class="description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-              </ul>
-              <a class="btn" href="#">See projects</a>
-            </div>
-          </div>
-          <div class="details">
-            <img class="pos" src="./images/grd2.svg" alt="" />
-            <div class="card-info switched-cards-info">
-              <h2>Multi-Post Stories</h2>
-              <div class="title-and-date">
-                <p class="title">CANOPY</p>
-                <span></span>
-                <p class="muted">BACK END DEV</p>
-                <span></span>
-                <p class="muted">2015</p>
-              </div>
-              <p class="description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-              </ul>
-              <a class="btn" href="#">See projects</a>
-            </div>
-          </div>
-          <div class="details">
-            <img src="./images/grd3.svg" alt="" />
-            <div class="card-info">
-              <h2>TONIC</h2>
-              <div class="title-and-date">
-                <p class="title">CANOPY</p>
-                <span></span>
-                <p class="muted">BACK END DEV</p>
-                <span></span>
-                <p class="muted">2015</p>
-              </div>
-              <p class="description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-              </ul>
-              <a class="btn" href="#">See projects</a>
-            </div>
-          </div>
-          <div class="details">
-            <img class="pos" src="./images/grd4.svg" alt="" />
-            <div class="card-info switched-cards-info">
-              <h2>Multi-Post Stories</h2>
-              <div class="title-and-date">
-                <p class="title">CANOPY</p>
-                <span></span>
-                <p class="muted">BACK END DEV</p>
-                <span></span>
-                <p class="muted">2015</p>
-              </div>
-              <p class="description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-              </ul>
-              <a class="btn" href="#">See projects</a>
-            </div>
-          </div>
+    <section class="works" id="portfolio">
+      <div class="contents container" id="portfolio">
+        <div class="projects">      
         </div>
       </div>
     </section>
+    <!-- The end of works section -->
+
+    <!-- POPUP SECTION -->
+    <section id="modal" class="hide"></section>
+    <!--POPUP SECTION ends-->
+
     <!-- ABOUT ME -->
     <section class="about-bg">
       <div class="myself about container">
@@ -261,8 +176,6 @@
             placeholder="John Doe" 
             required
             maxlength="30"
-            
-
             />
           <input type="email"
             name="email" 
@@ -277,5 +190,6 @@
       </div>
       </div>
     </section>
+    <script src="pop-up.js"></script>
   </body>
 </html>
