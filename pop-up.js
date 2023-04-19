@@ -115,10 +115,10 @@ projectsArea.addEventListener('click', (e) => {
                   ${search.technology.map((x) => `<li>${x}</li>`).join('')}
               </ul>
               <div class="buttons">
-                <a href="#" class="see-live"
+                <a href=${search.liveLink} class="see-live"
                   ><img src="./images/Enabled1.png" alt="see live"
                 /></a>
-                <a href="#" class="see-source"
+                <a href=${search.linkSource} class="see-source"
                   ><img src="./images/Enabled.png" alt="see source"
                 /></a>
               </div>
