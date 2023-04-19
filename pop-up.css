@@ -163,6 +163,9 @@ body {
     width: 85%;
     margin: 2rem auto;
   }
+  .switch {
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -172,12 +175,11 @@ body {
 
   .switch {
     display: grid;
+    width: 95%;
     grid-template-columns: 70% 30%;
     padding: 0.2rem 1.5rem 0;
     gap: 1rem;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    
+    margin: 1rem auto 0 1rem;  
   }
 
   .card-info .description .hide {
