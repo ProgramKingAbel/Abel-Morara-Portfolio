@@ -52,3 +52,91 @@ const projects = [
         linkSource: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
     },
 ];
+
+function generateContent() {
+    projectsArea.innerHTML = projects
+        .map(
+            (content) => `          
+         <div class="details">
+        <img src=${content.featureImg}  alt="" />
+
+        <div class="card-info">
+          <h2>${content.name}</h2>
+
+          <div class="title-and-date">
+            <p class="title">CANOPY</p>
+            <span></span>
+            <p class="muted">${content.stack}</p>
+            <span></span>
+            <p class="muted">${content.year}</p>
+          </div>
+
+          <p class="description">${content.description}</p>
+          <ul class="stack">
+          ${content.technology.map((x) => `<li>${x}</li>`).join('')}
+          </ul>
+          <a class="detail-btn btn" id=${content.id}href="#">See projects</a>
+        </div>
+      </div> `,
+        )
+        .join('');
+}
+projectsArea.addEventListener('click', (e) => {
+    if (e.target.classList.contains('detail-btn')) {
+        modal.style.display = 'block';
+        const id = parseFloat(e.target.id);
+        const search = projects.find((x) => x.id === id);
+        if (search !== undefined) {
+            modal.innerHTML = `
+             <div class="popup">
+            <div class="header-close modal-container">
+              <h3 class="popup-title">${search.name}</h3>
+              <i id="close-btn" class="uil uil-multiply"></i>
+            </div>
+            <div class="title-and-date modal-container">
+              <p class="title">${search.platform}</p>
+              <span></span>
+              <p class="muted">${search.stack}</p>
+              <span></span>
+              <p class="muted">${search.year}</p>
+            </div>
+            <div class="card-info modal-container">
+          <img class="main-img" src=${search.featureImg} alt="" />
+          <div class="switch">
+            <div class="description">
+              <p>
+               ${search.description}
+              </p>
+              <p class="hide">
+              ${search.description}
+              </p>
+            </div>
+            <div class="stack-and-buttons">
+              <ul class="stack">
+                  ${search.technology.map((x) => `<li>${x}</li>`).join('')}
+              </ul>
+              <div class="buttons">
+                <a href="#" class="see-live"
+                  ><img src="./images/Enabled1.png" alt="see live"
+                /></a>
+                <a href="#" class="see-source"
+                  ><img src="./images/Enabled.png" alt="see source"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     `
+        }
+
+    }
+    generateContent();
+});
+modal.addEventListener('click', (e) => {
+    if (e.target.id === 'close-btn') {
+        modal.style.display = 'none';
+      }
+      generateContent();
+    });  
+generateContent();
