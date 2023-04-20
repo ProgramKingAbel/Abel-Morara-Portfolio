@@ -28,11 +28,12 @@ function validateEmail(input, requiredMsg, invalidMsg) {
     return false;
   }
   // validate email RegEx
-  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$/;
 
   const email = input.value.trim();
+  const email2 = input.value.trim().toLowerCase();
 
-  if (!emailRegex.test(email)) {
+  if (!emailRegex.test(email) && (email !== email2)) {
     return showError(input, invalidMsg);
   }
   return true;
