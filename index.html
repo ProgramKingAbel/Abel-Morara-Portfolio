@@ -8,9 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-    <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="pop-up.css"/>
-    
+    <link rel="stylesheet" href="styles.css"/>
     <title>Portfolio - Abel Morara</title>
   </head>
   <body>
@@ -162,19 +161,33 @@
         <h2>Contact Me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
         <div class="contact-form">
-        <form action="https://formspree.io/f/mknaqzaj" method="POST">
-          <label for="name">Full name</label>
-          <input type="text" name="name" id="name" placeholder="John Doe" required maxlength="30"/>
-          <label for="email">Email address</label>
-          <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required/>
-          <label for="message">Write your message:</label>
-          <textarea name="message" id="message" placeholder="Write Your Message..." required maxlength="500"></textarea>
-          <button type="submit">Get in touch</button>
-        </form>
+        <form action="https://formspree.io/f/mknaqzaj" method="POST" id="register">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required maxlength="30"/>
+            <small></small>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required/>
+            <small></small>
+          </div>
+          <div class="field">
+            <label for="message">Write your message:</label>
+            <textarea name="message" id="message" placeholder="Write Your Message..." required maxlength="500"></textarea>
+            <small></small>
+          </div>
+          <div class="field">
+            <button type="submit" id="submit-btn">Get in touch</button>
+          </div>
+         </form>
       </div>
       </div>
       </div>
     </section>
+
     <script src="pop-up.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

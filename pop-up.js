@@ -139,3 +139,4 @@ modal.addEventListener('click', (e) => {
       generateContent();
     });  
 generateContent();
+
