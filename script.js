@@ -32,7 +32,7 @@ function showMessage(input, message, type) {
     //validate email RegEx 
     const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   
-    const email = input.value.trim();
+    const email = input.value.toLowerCase().trim();
   
     if (!emailRegex.test(email)) {
       return showError(input, invalidMsg);
@@ -40,8 +40,8 @@ function showMessage(input, message, type) {
     }
     return true;  
   }
- //---------------------------------- ADD CODE HERE ----------------------------------
-const form = document.getElementById("register");
+
+  const form = document.getElementById("register");
   const NAME_REQ = "Please Enter your name";
   const MSG_REQ = "Field Cannot be empty";
   const EMAIL_REQ = "Please Enter Your email";
@@ -59,5 +59,5 @@ const form = document.getElementById("register");
     //if valid submit form
     if (nameValid && emailValid && msgValid) {
         form.submit();
-    }
+    }
 });
