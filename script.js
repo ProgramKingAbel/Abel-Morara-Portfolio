@@ -41,3 +41,23 @@ function showMessage(input, message, type) {
     return true;  
   }
  //---------------------------------- ADD CODE HERE ----------------------------------
+const form = document.getElementById("register");
+  const NAME_REQ = "Please Enter your name";
+  const MSG_REQ = "Field Cannot be empty";
+  const EMAIL_REQ = "Please Enter Your email";
+  const EMAIL_INVALID = "Please Enter a correct email address";
+  const btn = document.getElementById('submit-btn');
+  
+   btn.addEventListener("click", function (event) {
+    //reject submission of form
+    event.preventDefault();
+  
+    //validate form
+    let nameValid = hasValue(form.elements["name"], NAME_REQ);
+    let emailValid = validateEmail(form.elements["email"], EMAIL_REQ, EMAIL_INVALID);
+    let msgValid = hasValue(form.elements["message"], MSG_REQ);
+    //if valid submit form
+    if (nameValid && emailValid && msgValid) {
+        form.submit();
+    }
+});
