@@ -30,9 +30,10 @@ function showMessage(input, message, type) {
         return false;
     }
     //validate email RegEx 
-    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
   
-    const email = input.value.toLowerCase().trim();
+    
+    const email = input.value.trim();
   
     if (!emailRegex.test(email)) {
       return showError(input, invalidMsg);
@@ -45,7 +46,7 @@ function showMessage(input, message, type) {
   const NAME_REQ = "Please Enter your name";
   const MSG_REQ = "Field Cannot be empty";
   const EMAIL_REQ = "Please Enter Your email";
-  const EMAIL_INVALID = "Please Enter a correct email address";
+  const EMAIL_INVALID = "Please Enter a correct email address in Lowercase";
   const btn = document.getElementById('submit-btn');
   
    btn.addEventListener("click", function (event) {
