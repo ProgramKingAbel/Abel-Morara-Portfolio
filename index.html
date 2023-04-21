@@ -15,16 +15,17 @@
   <body>
     <header>
       <a class="logo" href="#">Abel</a>
-      <nav>
-        <i class="uil uil-bars"></i>
-        <div class="header-links">
-        <a href="#my-works">Portfolio</a>
-        <a href="#about-me">About</a>
-        <a href="#my-contact">Contact</a>
-        </div>
-        
+      <nav class="navbar-container">
+        <i id="open-menu" class="uil uil-bars"></i>
+        <i id="close-menu" class="uil uil-multiply"></i>        
+        <ul class="nav-item-links"> 
+          <li><a href="#my-works">Portfolio</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#my-contact">Contact</a></li>
+        </ul>        
       </nav>
     </header>
+    <div class="overlay hidden"></div>
     <!-- MAIN SECTION -->
     <main>
       <section class="header-background">
