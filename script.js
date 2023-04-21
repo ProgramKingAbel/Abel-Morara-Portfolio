@@ -87,5 +87,5 @@ const data = JSON.parse(localStorage.getItem('userData'));
 if (data) {
   nameInput.value = data.name;
   emailInput.value = data.email;
-  msgInput.value = data.message;
+  msgInput.value = data.message;
 }
