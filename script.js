@@ -60,14 +60,13 @@ btn.addEventListener('click', (event) => {
   }
 });
 
-// SAVE DATA TO LOCAL STORAGE 
+// SAVE DATA TO LOCAL STORAGE
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const msgInput = document.getElementById('message');
 
-
 function storeData() {
-  //store user input in object 
+  // store user input in object
   const userData = {
     name: nameInput.value,
     email: emailInput.value,
@@ -77,18 +76,14 @@ function storeData() {
   // store userData in localStorage
   localStorage.setItem('userData', JSON.stringify(userData));
 }
-  //trigger function to save data on event 
-  nameInput.addEventListener('focusout', storeData);
-  emailInput.addEventListener('focusout', storeData);
-  msgInput.addEventListener('focusout', storeData);
+// trigger function to save data on event
+nameInput.addEventListener('focusout', storeData);
+emailInput.addEventListener('focusout', storeData);
+msgInput.addEventListener('focusout', storeData);
 
-  //retrieve data and populate fields
+// retrieve data and populate fields
 const data = JSON.parse(localStorage.getItem('userData'));
-console.log(data);
-  if (data) {
-    nameInput.value = data.name;
-    emailInput.value = data.email;
-    msgInput.value = data.message;
+// console.log(data);
 
-  }
-  
+//-------------------- ENTER CODE HERE --------------------
+ 
