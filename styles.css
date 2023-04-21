@@ -549,23 +549,33 @@ textarea.success:focus {
     display: none;
   }
 
-  nav .header-links {
+   header ul {
     display: flex;
-    gap: 2.5rem;
-    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
   }
 
-  nav .header-links a {
-    font-family: "Poppins", serif;
-    font-style: normal;
-    font-weight: 500;
+  header ul li a {
+    font-family: "Poppins", sans-serif;
     font-size: 1rem;
     color: #344563;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: all 400ms ease-in-out;
+  }
+
+  header ul li a:hover {
+    color: #2230d2;
+    opacity: 1;
+    margin-right: 0.1rem;
   }
 
   .header-background {
     background-image: url(./images/Header-bg-desktop.svg);
   }
+
 
   .about {
     width: 70%;
