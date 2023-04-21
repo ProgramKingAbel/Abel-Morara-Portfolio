@@ -8,6 +8,7 @@ openBtn.addEventListener('click', () => {
   menu.style.display = 'block';
   openBtn.style.display = 'none';
   closeBtn.style.display = 'inline-block';
+
   overlay.classList.remove('hidden');
   // Prevent Scrolling when overlay is not hidden
   document.body.style.overflow = 'hidden';
@@ -23,7 +24,7 @@ const closeNavbar = () => {
 closeBtn.addEventListener('click', () => {
   closeNavbar();
 });
-// close nav when link is clicked
+// close nav when any other part of document is clicked
 const navBarItems = document.querySelectorAll('.nav-item-links li a');
 if (window.innerWidth < 767) {
   navBarItems.forEach((item) => {
