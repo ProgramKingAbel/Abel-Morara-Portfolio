@@ -84,6 +84,8 @@ msgInput.addEventListener('focusout', storeData);
 // retrieve data and populate fields
 const data = JSON.parse(localStorage.getItem('userData'));
 // console.log(data);
-
-//-------------------- ENTER CODE HERE --------------------
- 
+if (data) {
+  nameInput.value = data.name;
+  emailInput.value = data.email;
+  msgInput.value = data.message;
+}
