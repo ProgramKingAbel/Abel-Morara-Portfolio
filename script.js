@@ -26,6 +26,21 @@ closeBtn.addEventListener('click', () => {
 });
 //close nav when any other part of document is clicked
 // ----------------------------------------ADD CODE HERE -----------------------------------------------------------------
+const navBarItems = document.querySelectorAll('.nav-item-links li a');
+if (window.innerWidth < 767) {
+    navBarItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            closeNavbar();
+        });
+    });
+    //hides nav when list item is clicked
+    menu.addEventListener('click', () => {
+        menu.style.display = 'none';
+        document.body.style.overflow = 'scroll';
+        overlay.classList.add('hidden');
+        openBtn.style.display = 'block';
+      });
+}
 // Form validation goes here
 
 function showMessage(input, message, type) {
