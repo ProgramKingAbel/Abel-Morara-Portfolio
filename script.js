@@ -1,3 +1,45 @@
+const openBtn = document.querySelector('#open-menu');
+const closeBtn = document.querySelector('#close-menu');
+const menu = document.querySelector('.nav-item-links');
+const overlay = document.querySelector('.overlay');
+
+// Open navbar
+openBtn.addEventListener('click', () => {
+  menu.style.display = 'block';
+  openBtn.style.display = 'none';
+  closeBtn.style.display = 'inline-block';
+
+  overlay.classList.remove('hidden');
+  // Prevent Scrolling when overlay is not hidden
+  document.body.style.overflow = 'hidden';
+});
+// close menu
+const closeNavbar = () => {
+  menu.style.display = 'none';
+  openBtn.style.display = 'inline-block';
+  closeBtn.style.display = 'none';
+  overlay.classList.add('hidden');
+  document.body.style.overflow = 'scroll';
+};
+closeBtn.addEventListener('click', () => {
+  closeNavbar();
+});
+// close nav when any other part of document is clicked
+const navBarItems = document.querySelectorAll('.nav-item-links li a');
+if (window.innerWidth < 767) {
+  navBarItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      closeNavbar();
+    });
+  });
+  // hides nav when list item is clicked
+  menu.addEventListener('click', () => {
+    menu.style.display = 'none';
+    document.body.style.overflow = 'scroll';
+    overlay.classList.add('hidden');
+    openBtn.style.display = 'block';
+  });
+}
 // Form validation goes here
 
 function showMessage(input, message, type) {

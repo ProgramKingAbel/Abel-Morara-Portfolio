@@ -15,16 +15,17 @@
   <body>
     <header>
       <a class="logo" href="#">Abel</a>
-      <nav>
-        <i class="uil uil-bars"></i>
-        <div class="header-links">
-        <a href="#my-works">Portfolio</a>
-        <a href="#about-me">About</a>
-        <a href="#my-contact">Contact</a>
-        </div>
-        
+      <nav class="navbar-container">
+        <i id="open-menu" class="uil uil-bars"></i>
+        <i id="close-menu" class="uil uil-multiply"></i>        
+        <ul class="nav-item-links"> 
+          <li><a href="#portfolio">Portfolio</a></li> <!--portfolio/works section generated dynamically-->
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#my-contact">Contact</a></li>
+        </ul>        
       </nav>
     </header>
+    <div class="overlay hidden"></div>
     <!-- MAIN SECTION -->
     <main>
       <section class="header-background">
@@ -61,9 +62,9 @@
       </section>
     </main>
     <!-- MY WORKS -->
-    <section class="works" id="portfolio">
-      <div class="contents container" id="portfolio">
-        <div class="projects">      
+    <section class="works">
+      <div class="contents container">
+        <div class="projects" id="portfolio">      
         </div>
       </div>
     </section>
